@@ -1,7 +1,9 @@
 # SuperConnect
 
 **Description**: We aim to deploy a Layer 2 blockchain using the OP Stack to enhance scalability and user experience. It will support decentralized applications (dApps) with seamless login via WorldID, fostering a robust ecosystem that simplifies blockchain access and encourages innovation.
+
 **Github**: https://github.com/SuperConnectHack/SuperConnect
+
 **Idea**: We aim to deploy a Layer 2 (L2) blockchain utilizing the OP Stack framework, specifically designed to enhance scalability and user experience. This new chain will facilitate the development of decentralized applications (dApps) while integrating login functionalities through WorldID, allowing users to authenticate their identities seamlessly.
 
 Key components of the project include:
