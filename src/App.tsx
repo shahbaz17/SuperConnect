@@ -319,6 +319,24 @@ function App() {
       </div>
       <h1>Super Connect Wallet</h1>
       <div className="grid">{loggedIn ? loggedInView : loggedOutView}</div>
+
+      <p>
+        <h5>SuperConnect L2 Resources</h5>
+        <a
+          href="https://superconnect-kkwmx41xx2-13265ed1e301e050.testnets.rollbridge.app/"
+          target="_blank"
+          className="vite-link"
+        >
+          Super Bridge
+        </a>
+        <a
+          href="https://explorer-superconnect-kkwmx41xx2.t.conduit.xyz/"
+          target="_blank"
+          className="vite-link"
+        >
+          Blockscout Explorer
+        </a>
+      </p>
       <p>
         <a
           href="https://github.com/SuperConnectHack/SuperConnect"
