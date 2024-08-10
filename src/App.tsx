@@ -42,10 +42,11 @@ function App() {
       try {
         const chainConfig = {
           chainNamespace: CHAIN_NAMESPACES.EIP155,
-          chainId: "0xaa36a7", // Sepolia chain ID, 0x4CF6 for SuperConnect Sepolia
-          rpcTarget: "https://rpc.ankr.com/eth_sepolia",
-          displayName: "Ethereum Sepolia Testnet",
-          blockExplorerUrl: "https://sepolia.etherscan.io",
+          chainId: "0x4CF6", // 0x4CF6 for SuperConnect Sepolia
+          rpcTarget: "https://rpc-superconnect-kkwmx41xx2.t.conduit.xyz",
+          displayName: "SuperConnect Sepolia Testnet",
+          blockExplorerUrl:
+            "https://explorer-superconnect-kkwmx41xx2.t.conduit.xyz",
           ticker: "ETH",
           tickerName: "Ethereum",
           logo: "https://cryptologos.cc/logos/ethereum-eth-logo.png",
