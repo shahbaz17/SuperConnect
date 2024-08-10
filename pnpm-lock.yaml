@@ -35,6 +35,9 @@ importers:
       react-dom:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
+      viem:
+        specifier: ^2.19.3
+        version: 2.19.3(typescript@5.5.4)
     devDependencies:
       '@types/react':
         specifier: ^18.3.3
@@ -50,7 +53,7 @@ importers:
         version: 7.18.0(eslint@8.57.0)(typescript@5.5.4)
       '@vitejs/plugin-react':
         specifier: ^4.3.1
-        version: 4.3.1(vite@5.3.5)
+        version: 4.3.1(vite@5.4.0)
       eslint:
         specifier: ^8.57.0
         version: 8.57.0
@@ -65,7 +68,7 @@ importers:
         version: 5.5.4
       vite:
         specifier: ^5.3.4
-        version: 5.3.5
+        version: 5.4.0
 
 packages:
 
@@ -404,10 +407,6 @@ packages:
 
   '@metamask/rpc-errors@6.2.1':
     resolution: {integrity: sha512-VTgWkjWLzb0nupkFl1duQi9Mk8TGT9rsdnQg6DeRrYEFxtFOh0IF8nAwxM/4GWqDl6uIB06lqUBgUrAVWl62Bw==}
-    engines: {node: '>=16.0.0'}
-
-  '@metamask/rpc-errors@6.3.1':
-    resolution: {integrity: sha512-ugDY7cKjF4/yH5LtBaOIKHw/AiGGSAmzptAUEiAEGr/78LwuzcXAxmzEQfSfMIfI+f9Djr8cttq1pRJJKfTuCg==}
     engines: {node: '>=16.0.0'}
 
   '@metamask/superstruct@3.1.0':
@@ -788,8 +787,8 @@ packages:
     peerDependencies:
       '@babel/runtime': 7.x
 
-  '@toruslabs/openlogin-jrpc@8.1.1':
-    resolution: {integrity: sha512-SGuFHWLPDbnfexe/t2dcwZT06N8k8NNkWJF+Y8eHqK4k0jgVNauIrs3wK0dshlLtgQKDQFFsqdQlWNVa7cLz6w==}
+  '@toruslabs/openlogin-jrpc@8.3.0':
+    resolution: {integrity: sha512-1OdSkUXGXJobkkMIJHuf+XzwmUB4ROy6uQfPEJ3NXvNj84+N4hNpvC4JPg7VoWBHdfCba9cv6QnQsVArlwai4A==}
     engines: {node: '>=18.x', npm: '>=9.x'}
     peerDependencies:
       '@babel/runtime': 7.x
@@ -1114,8 +1113,8 @@ packages:
     resolution: {integrity: sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==}
     engines: {node: '>=6'}
 
-  caniuse-lite@1.0.30001649:
-    resolution: {integrity: sha512-fJegqZZ0ZX8HOWr6rcafGr72+xcgJKI9oWfDW5DrD7ExUtgZC7a7R7ZYmZqplh7XDocFdGeIFn7roAxhOeYrPQ==}
+  caniuse-lite@1.0.30001651:
+    resolution: {integrity: sha512-9Cf+Xv1jJNe1xPZLGuUXLNkE1BoDkqRqYyFJ9TDYSqhduqA4hu4oR9HluGoWYQC/aj8WHjsGVV+bwkh0+tegRg==}
 
   chalk@2.4.2:
     resolution: {integrity: sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==}
@@ -1236,8 +1235,8 @@ packages:
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
-  electron-to-chromium@1.5.4:
-    resolution: {integrity: sha512-orzA81VqLyIGUEA77YkVA1D+N+nNfl2isJVjjmOyrlxuooZ19ynb+dOlaDTqd/idKRS9lDCSBmtzM+kyCsMnkA==}
+  electron-to-chromium@1.5.6:
+    resolution: {integrity: sha512-jwXWsM5RPf6j9dPYzaorcBSUg6AiqocPEyMpkchkvntaH9HGfOOMZwxMJjDY/XEs3T5dM7uyH1VhRMkqUU9qVw==}
 
   elliptic@6.5.6:
     resolution: {integrity: sha512-mpzdtpeCLuS3BmE3pO3Cpp5bbjlOPY2Q0PgoF+Od1XZrHLYI28Xe3ossCmYCQt11FQKEYd9+PF8jymTvtWJSHQ==}
@@ -2297,8 +2296,8 @@ packages:
       typescript:
         optional: true
 
-  vite@5.3.5:
-    resolution: {integrity: sha512-MdjglKR6AQXQb9JGiS7Rc2wC6uMjcm7Go/NHNO63EwiJXfuk9PgqiP/n5IDJCziMkfw9n4Ubp7lttNwz+8ZVKA==}
+  vite@5.4.0:
+    resolution: {integrity: sha512-5xokfMX0PIiwCMCMb9ZJcMyh5wbBun0zUzKib+L65vAZ8GY9ePZMXxFrHbr/Kyll2+LSCY7xtERPpxkBDKngwg==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -2306,6 +2305,7 @@ packages:
       less: '*'
       lightningcss: ^1.21.0
       sass: '*'
+      sass-embedded: '*'
       stylus: '*'
       sugarss: '*'
       terser: ^5.4.0
@@ -2317,6 +2317,8 @@ packages:
       lightningcss:
         optional: true
       sass:
+        optional: true
+      sass-embedded:
         optional: true
       stylus:
         optional: true
@@ -2745,13 +2747,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@metamask/rpc-errors@6.3.1':
-    dependencies:
-      '@metamask/utils': 9.1.0
-      fast-safe-stringify: 2.1.1
-    transitivePeerDependencies:
-      - supports-color
-
   '@metamask/superstruct@3.1.0': {}
 
   '@metamask/utils@8.5.0':
@@ -3058,7 +3053,7 @@ snapshots:
       '@metamask/rpc-errors': 6.2.1
       '@toruslabs/broadcast-channel': 10.0.2
       '@toruslabs/http-helpers': 6.1.1(@babel/runtime@7.25.0)
-      '@toruslabs/openlogin-jrpc': 8.1.1(@babel/runtime@7.25.0)
+      '@toruslabs/openlogin-jrpc': 8.3.0(@babel/runtime@7.25.0)
       '@toruslabs/openlogin-utils': 8.2.1(@babel/runtime@7.25.0)
       async-mutex: 0.5.0
       bignumber.js: 9.1.2
@@ -3118,18 +3113,15 @@ snapshots:
     transitivePeerDependencies:
       - '@sentry/types'
 
-  '@toruslabs/openlogin-jrpc@8.1.1(@babel/runtime@7.25.0)':
+  '@toruslabs/openlogin-jrpc@8.3.0(@babel/runtime@7.25.0)':
     dependencies:
       '@babel/runtime': 7.25.0
-      '@metamask/rpc-errors': 6.3.1
       end-of-stream: 1.4.4
       events: 3.3.0
       fast-safe-stringify: 2.1.1
       once: 1.4.0
       pump: 3.0.0
       readable-stream: 4.5.2
-    transitivePeerDependencies:
-      - supports-color
 
   '@toruslabs/openlogin-session-manager@3.1.1(@babel/runtime@7.25.0)':
     dependencies:
@@ -3305,14 +3297,14 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@vitejs/plugin-react@4.3.1(vite@5.3.5)':
+  '@vitejs/plugin-react@4.3.1(vite@5.4.0)':
     dependencies:
       '@babel/core': 7.25.2
       '@babel/plugin-transform-react-jsx-self': 7.24.7(@babel/core@7.25.2)
       '@babel/plugin-transform-react-jsx-source': 7.24.7(@babel/core@7.25.2)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.2
-      vite: 5.3.5
+      vite: 5.4.0
     transitivePeerDependencies:
       - supports-color
 
@@ -3321,7 +3313,7 @@ snapshots:
       '@babel/runtime': 7.25.0
       '@metamask/rpc-errors': 6.2.1
       '@toruslabs/base-controllers': 5.9.2(@babel/runtime@7.25.0)
-      '@toruslabs/openlogin-jrpc': 8.1.1(@babel/runtime@7.25.0)
+      '@toruslabs/openlogin-jrpc': 8.3.0(@babel/runtime@7.25.0)
       '@web3auth/base': 8.12.0(@babel/runtime@7.25.0)
       json-rpc-random-id: 1.0.1
     transitivePeerDependencies:
@@ -3336,7 +3328,7 @@ snapshots:
       '@toruslabs/constants': 13.4.0(@babel/runtime@7.25.0)
       '@toruslabs/http-helpers': 6.1.1(@babel/runtime@7.25.0)
       '@toruslabs/openlogin': 8.2.1(@babel/runtime@7.25.0)
-      '@toruslabs/openlogin-jrpc': 8.1.1(@babel/runtime@7.25.0)
+      '@toruslabs/openlogin-jrpc': 8.3.0(@babel/runtime@7.25.0)
       '@toruslabs/openlogin-utils': 8.2.1(@babel/runtime@7.25.0)
       jwt-decode: 4.0.0
       loglevel: 1.9.1
@@ -3357,7 +3349,7 @@ snapshots:
       '@metamask/rpc-errors': 6.2.1
       '@toruslabs/base-controllers': 5.9.2(@babel/runtime@7.25.0)
       '@toruslabs/http-helpers': 6.1.1(@babel/runtime@7.25.0)
-      '@toruslabs/openlogin-jrpc': 8.1.1(@babel/runtime@7.25.0)
+      '@toruslabs/openlogin-jrpc': 8.3.0(@babel/runtime@7.25.0)
       '@web3auth/base': 8.12.0(@babel/runtime@7.25.0)
       '@web3auth/base-provider': 8.12.0(@babel/runtime@7.25.0)
       assert: 2.1.0
@@ -3374,7 +3366,7 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.25.0
       '@toruslabs/openlogin': 8.2.1(@babel/runtime@7.25.0)
-      '@toruslabs/openlogin-jrpc': 8.1.1(@babel/runtime@7.25.0)
+      '@toruslabs/openlogin-jrpc': 8.3.0(@babel/runtime@7.25.0)
       '@toruslabs/openlogin-utils': 8.2.1(@babel/runtime@7.25.0)
       '@web3auth/base': 8.12.0(@babel/runtime@7.25.0)
       '@web3auth/base-provider': 8.12.0(@babel/runtime@7.25.0)
@@ -3547,8 +3539,8 @@ snapshots:
 
   browserslist@4.23.3:
     dependencies:
-      caniuse-lite: 1.0.30001649
-      electron-to-chromium: 1.5.4
+      caniuse-lite: 1.0.30001651
+      electron-to-chromium: 1.5.6
       node-releases: 2.0.18
       update-browserslist-db: 1.1.0(browserslist@4.23.3)
 
@@ -3571,7 +3563,7 @@ snapshots:
 
   camelcase@5.3.1: {}
 
-  caniuse-lite@1.0.30001649: {}
+  caniuse-lite@1.0.30001651: {}
 
   chalk@2.4.2:
     dependencies:
@@ -3693,7 +3685,7 @@ snapshots:
 
   eastasianwidth@0.2.0: {}
 
-  electron-to-chromium@1.5.4: {}
+  electron-to-chromium@1.5.6: {}
 
   elliptic@6.5.6:
     dependencies:
@@ -4785,7 +4777,7 @@ snapshots:
       - utf-8-validate
       - zod
 
-  vite@5.3.5:
+  vite@5.4.0:
     dependencies:
       esbuild: 0.21.5
       postcss: 8.4.41
