@@ -34,8 +34,10 @@ function App() {
   > | null>(null);
   const [address, setAddress] = useState<`0x${string}` | null>(null);
   const [balance, setBalance] = useState<string | null>(null);
-  const [recipientAddress, setRecipientAddress] = useState<string>("");
-  const [amount, setAmount] = useState<string>("");
+  const [recipientAddress, setRecipientAddress] = useState<string>(
+    "0xeaA8Af602b2eDE45922818AE5f9f7FdE50cFa1A8"
+  );
+  const [amount, setAmount] = useState<string>("0.01");
 
   useEffect(() => {
     const init = async () => {
@@ -200,7 +202,7 @@ function App() {
           {
             from: address,
             to: recipientAddress,
-            gas: "0x5B8D80",
+            gas: "0xCF08",
             value: parseEther(amount),
             data: "0x",
             gasPrice: "0x4a817c800",
@@ -214,6 +216,8 @@ function App() {
       if (el) {
         el.innerHTML = `Transaction sent: ${anchor}`;
       }
+      setAmount("");
+      setRecipientAddress("");
 
       // TODO: Update with this code once the issue is resolved
       // const val = parseEther(amount);
@@ -248,9 +252,7 @@ function App() {
           </a>{" "}
           wallet.
         </p>
-
         <div>
-          <h2>Send Transaction</h2>
           <IDKitWidget
             app_id="app_staging_f3a97c0c7a87ffad90737c4cd149a763"
             action="verify-for-bigger-transaction"
@@ -258,12 +260,13 @@ function App() {
             handleVerify={verifyProof}
             onSuccess={onSuccess}
           ></IDKitWidget>
+        </div>
+        <div>
+          <h2>Send Transaction</h2>
           <form
             onSubmit={(e) => {
               e.preventDefault();
               sendWithVerifyTransaction();
-              setAmount("");
-              setRecipientAddress("");
             }}
           >
             <input
